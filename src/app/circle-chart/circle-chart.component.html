@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-12">
+        <div class="p-2">
+            <p class="px-4"><b>Year: </b> {{yearMetric.year}}</p>
+            <ngx-charts-pie-grid
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="chartData">
+            </ngx-charts-pie-grid>
+        </div>
+    </div>
+</div>

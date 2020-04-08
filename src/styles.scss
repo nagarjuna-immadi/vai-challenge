@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$gray: #F8F9FA;
+$gray-dark: #e4e4e4;
+
+.dashboard-container {
+    border-bottom: 1px solid $gray-dark;
+}
+
+.profile {
+    .card {
+        border: none;
+        border-radius: 0px;
+        img {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.charts-container {
+    border-left: 1px solid $gray-dark;
+}

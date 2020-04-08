@@ -1,0 +1,12 @@
+<div class="container-fluid px-0 dashboard-container">
+    <div class="row no-gutters">
+        <div class="col-3">
+            <app-profile *ngIf="profileData" [profile]="profileData"></app-profile>
+        </div>
+        <div class="col-9 charts-container" *ngIf="userMetrics">
+            <h4 class="text-right px-2 py-3 bg-light">Dashboard</h4>
+            <app-circle-chart [yearMetric]="selectedMetric"></app-circle-chart>
+            <app-bar-chart [metrics]="userMetrics" (selectedYear)="yearChanged($event)"></app-bar-chart>
+        </div>
+    </div>
+</div>

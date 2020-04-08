@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vai-challenge"
+    }
+  },
+  "defaultProject": "vai-challenge",
+  "cli": {
+    "analytics": false
+  }
 }
